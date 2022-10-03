@@ -1,0 +1,94 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:fantasy;
+}
+:root{
+    --bg-color: #110c23;
+    --text-color:  rgb(102, 146, 146);;
+    --alt-color: #6c3c2f;
+    --accent-color:#150441;
+    --gradient: linear-gradient( rgb(140, 198, 248), rgb(48, 180, 195));
+    --card-bg:rgb(155, 221, 231);
+    --border-left: 6px solid rgb(11, 43, 117);
+    --box-shadow: 5px 6px 3px #13293d;
+    --box-shadow2: 0px 0px 20px rgb(19, 203, 59);
+    /* Font Design */
+    --clean-font: 'Inter Tight', sans-serif;
+}
+/* each element design */
+header{
+    display:flex;
+    height:20vh;
+    justify-content: space-between;
+    background: var(--gradient);
+}
+section{
+    width:80%;
+    margin:0 auto;
+    border:var(--bg-color);
+    box-shadow:var(--box-shadow);
+    min-height:70vh;
+    display: flex;
+}
+.hide, #correct-ans.hide{
+    display:none;
+
+}
+#instructions{
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    font-family: var(--clean-font);
+
+}
+#instructions > button {
+    font-size:3em;
+    background-color: var(--text-color);
+}
+#instructions > button:hover {
+ opacity: 0.5;
+}
+p{
+    font-size: 4em;
+    text-transform: uppercase;
+    color:var(--text-color);
+}
+#game {
+    flex-wrap:wrap;
+    font-size:2em
+}
+#correct-ans {
+    width:100%;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+}
+
+#correct-ans > * {
+    flex:1 0 45%;
+    border:1px solid black;
+    font-size:1em;
+}
+
+.correct {
+    color:green;
+}
+.wrong {
+    color:red
+}
+#ans-buttons{
+    font-size:3em;
+    text-align:center;
+    margin:0 auto;
+}
+
+#scores-input {
+    flex-direction:column;
+    align-items: center;
+}
+
+#high-scores {
+    flex-direction:column;
+    align-items:center
+}
