@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mountain-Quiz</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <Header>
+        <a href="./scores.html"> You Score Tally</a>
+        <h3 id="timer"></h3>
+    </Header>
+    <!-- Main Section starts here -->
+    <main>
+        <!-- Sections -->
+        <!-- Section 1 for instruction and start button -->
+        <section id="instructions">
+            <p>Welcome to fun quiz on mountains!!!</p>
+            <button id="start-game">Let's Start Quiz</button>
+        </section>
+        <!-- Section 2 for the game screen -->
+        <section id="game" class="hide">
+            <div id="correct-ans" class="hide"></div>
+            <h2 id = "questions"></h2>
+            <div id="ans-buttons"></div>
+        </section>
+        <!-- Section for score -->
+        <section id="scores-input" class="hide">
+            <h1>congratuations! your score <span id="score"></span>! Add you initials to save your score!</h1>
+            <form>
+                <input type="text" placeholder="initials!">
+                <button>Add Score!!</button>
+            </form>
+
+        </section>
+    </main>
+    <!-- Attaching my js scripts -->
+    <script src="./assets/js/questions.js"></script>
+    <script src="./assets/js/script.js"></script>
+
+
+</body>
+
+</html>
