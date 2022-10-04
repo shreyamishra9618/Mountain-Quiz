@@ -6,13 +6,9 @@
 :root{
     --bg-color: #110c23;
     --text-color:  rgb(102, 146, 146);;
-    --alt-color: #6c3c2f;
     --accent-color:#150441;
     --gradient: linear-gradient( rgb(140, 198, 248), rgb(48, 180, 195));
-    --card-bg:rgb(155, 221, 231);
-    --border-left: 6px solid rgb(11, 43, 117);
     --box-shadow: 5px 6px 3px #13293d;
-    --box-shadow2: 0px 0px 20px rgb(19, 203, 59);
     /* Font Design */
     --clean-font: 'Inter Tight', sans-serif;
 }
@@ -22,6 +18,14 @@ header{
     height:20vh;
     justify-content: space-between;
     background: var(--gradient);
+}
+img{
+    display:flex;
+    margin:20px auto;
+    height:300px;
+    width:auto;
+    justify-content: space-between;
+    overflow: hidden;
 }
 section{
     width:80%;
@@ -43,20 +47,24 @@ section{
 
 }
 #instructions > button {
-    font-size:3em;
+    font-size:4em;
     background-color: var(--text-color);
 }
 #instructions > button:hover {
  opacity: 0.5;
 }
 p{
-    font-size: 4em;
+    font-size: 2.5em;
     text-transform: uppercase;
     color:var(--text-color);
 }
 #game {
     flex-wrap:wrap;
-    font-size:2em
+    
+}
+#questions{
+    font-size: 2.6em;
+    flex-wrap: wrap;
 }
 #correct-ans {
     width:100%;
@@ -67,18 +75,20 @@ p{
 
 #correct-ans > * {
     flex:1 0 45%;
-    border:1px solid black;
-    font-size:1em;
+    border:3px solid black;
+    font-size:4em;
 }
 
 .correct {
-    color:green;
+    color:rgb(15, 166, 15);
 }
 .wrong {
-    color:red
+    color:rgb(235, 18, 18)
 }
 #ans-buttons{
-    font-size:3em;
+   
+    justify-content: space-between;
+    font-size: 3em;
     text-align:center;
     margin:0 auto;
 }
@@ -92,3 +102,19 @@ p{
     flex-direction:column;
     align-items:center
 }
+@media screen and (max-width: 576px) {
+    header {
+      flex-direction: column;
+    }
+    img{
+        width:250px;
+    }
+  }
+@media screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+    }
+    img{
+        width:400px;
+    }
+  }
