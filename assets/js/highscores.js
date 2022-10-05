@@ -1,7 +1,7 @@
-var scores = JSON.parse(localStorage.getItem("scores"))||[];
+var scores = JSON.parse(localStorage.getItem("TotalScores"))||[];
 
 scores.forEach(score=>{
-    var newli = document.createElement("li");
-    newli.textContent = `${score.init} : ${score.score}`
-    document.querySelector("ol").append(newli)
+    var newlistEl = document.createElement("li");
+    newlistEl.textContent = `${score.init} : ${score.score}`
+    document.querySelector("ol").append(newlistEl)
 })

@@ -46,11 +46,11 @@ section{
     font-family: var(--clean-font);
 
 }
-#instructions > button {
+#instructions  button {
     font-size:4em;
     background-color: var(--text-color);
 }
-#instructions > button:hover {
+#instructions  button:hover {
  opacity: 0.5;
 }
 p{
@@ -73,10 +73,10 @@ p{
     justify-content:space-around;
 }
 
-#correct-ans > * {
-    flex:1 0 45%;
-    border:3px solid black;
-    font-size:4em;
+#correct-ans  {
+    flex:1 1 45%;
+    border:4px solid black;
+    font-size: 3em;
 }
 
 .correct {
@@ -86,11 +86,14 @@ p{
     color:rgb(235, 18, 18)
 }
 #ans-buttons{
-   
+    
     justify-content: space-between;
-    font-size: 3em;
+    font-size: 2rem;
     text-align:center;
     margin:0 auto;
+    height:100px;
+    width: 600px;
+  
 }
 
 #scores-input {

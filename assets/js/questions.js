@@ -48,5 +48,5 @@ var questions = [
         question:"Which of the following mountains is located in Italy?",
         answers:["Apennine","Pyrenees", "Dimaric Alps", "Zura"],
         correctAnswer: "Apennine"
-    },
+    }
 ]
